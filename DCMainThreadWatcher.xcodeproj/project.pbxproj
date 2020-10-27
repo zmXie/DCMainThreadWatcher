@@ -14,6 +14,7 @@
 		0461899425482A6000D9437E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0461899325482A6000D9437E /* Assets.xcassets */; };
 		0461899725482A6000D9437E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0461899525482A6000D9437E /* LaunchScreen.storyboard */; };
 		0461899A25482A6000D9437E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461899925482A6000D9437E /* main.m */; };
+		046189A425482AA900D9437E /* DCMainThreadWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 046189A325482AA900D9437E /* DCMainThreadWatcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		0461899625482A6000D9437E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0461899825482A6000D9437E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0461899925482A6000D9437E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		046189A225482AA900D9437E /* DCMainThreadWatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCMainThreadWatcher.h; sourceTree = "<group>"; };
+		046189A325482AA900D9437E /* DCMainThreadWatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCMainThreadWatcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 		0461898625482A5E00D9437E /* DCMainThreadWatcher */ = {
 			isa = PBXGroup;
 			children = (
+				046189A125482A6A00D9437E /* MainThreadWatcher */,
 				0461898725482A5E00D9437E /* AppDelegate.h */,
 				0461898825482A5E00D9437E /* AppDelegate.m */,
 				0461898A25482A5E00D9437E /* SceneDelegate.h */,
@@ -74,6 +78,15 @@
 				0461899925482A6000D9437E /* main.m */,
 			);
 			path = DCMainThreadWatcher;
+			sourceTree = "<group>";
+		};
+		046189A125482A6A00D9437E /* MainThreadWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				046189A225482AA900D9437E /* DCMainThreadWatcher.h */,
+				046189A325482AA900D9437E /* DCMainThreadWatcher.m */,
+			);
+			path = MainThreadWatcher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0461898F25482A5E00D9437E /* ViewController.m in Sources */,
+				046189A425482AA900D9437E /* DCMainThreadWatcher.m in Sources */,
 				0461898925482A5E00D9437E /* AppDelegate.m in Sources */,
 				0461899A25482A6000D9437E /* main.m in Sources */,
 				0461898C25482A5E00D9437E /* SceneDelegate.m in Sources */,
@@ -294,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RA3S34K4EA;
 				INFOPLIST_FILE = DCMainThreadWatcher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RA3S34K4EA;
 				INFOPLIST_FILE = DCMainThreadWatcher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
